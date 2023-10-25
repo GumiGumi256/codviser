@@ -15,7 +15,7 @@ const Footer = () => {
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn title={columns.title}>
-                <ul className="regular-20 flex flex-col gap-4 text-gray-30">
+                <ul className="regular-20 flex flex-col gap-4 text-gray-50">
                   {columns.links.map((link) => (
                     <Link href="/" key={link} className='transition-all hover:font-bold'>
                       {link}
@@ -33,10 +33,10 @@ const Footer = () => {
                     key={link.label}
                     className="flex gap-4 md:flex-col lg:flex-row"
                   >
-                    <p className="whitespace-nowrap text-gray-30 transition-all hover:font-bold">
+                    <p className="whitespace-nowrap text-gray-50 transition-all hover:font-bold">
                       {link.label}:
                     </p>
-                    <p className="regular-20 whitespace-nowrap text-gray-30">
+                    <p className="regular-20 whitespace-nowrap text-gray-50">
                       {link.value}
                     </p>
                   </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
-                <ul className="regular-24 flex gap-4 text-gray-30">
+                <ul className="regular-24 flex gap-4 text-gray-50">
                   {SOCIALS.links.map((link) => (
                     <Link href="/" key={link}>
                       <Image src={link} alt="logo" width={24} height={24} className='text-green-50' />
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-20 w-full text-center text-gray-30">{new Date().getFullYear()} <span className='text-green-50'>Codviser</span> | All rights reserved</p>
+        <p className="regular-20 w-full text-center text-gray-50">{new Date().getFullYear()} <span className='text-green-50'>Codviser</span> | All rights reserved</p>
       </div>
     </footer>
   )

@@ -5,7 +5,7 @@ import Button from "./Button"
 const HireUs = () => {
   return (
     <div>
-         <div className='bg-orange-50 rounded-md mx-auto my-20 max-w-[1200px] text-gray-20 py-3 flexEnd font-sans'>
+         <div className='bg-green-10 rounded-md mx-auto my-20 max-w-[1200px] text-gray-50 py-3 flexEnd font-sans'>
       <div className=' flex flex-col lg:flex-row flexCenter gap-10 mx-5 lg:mx-10'>
         <h2 className="bold-25 lg:bold-30">Hire the world’s best developers
 and designers around!</h2>
@@ -27,7 +27,7 @@ className='mb-1 mx-auto'
       <Button
          type="button"
          title="Hire the best Developers"
-         variant="btn_dark_green_outline"
+         variant="btn_white"
          
         />
         <Image 

@@ -19,7 +19,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <div className="max-container padding-container relative w-full flex justify-center">
         <div className="z-20 flex w-full flex-col lg:w-[95%]">
           <div className="relative">
-            <h2 className="bold-40 lg:bold-60 mt-8 text-gray-20">
+            <h2 className="bold-40 lg:bold-60 mt-8 text-gray-50">
               Our <span className="text-green-50">Projects</span>
             </h2>
           </div>
@@ -31,7 +31,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               >
                 <Image
                   src={urlForImage(project.image).url()}
-                  alt="Project"
+                  alt="Project image"
                   width={500}
                   height={510}
                   className="rounded-[15px] object-cover"

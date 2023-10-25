@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 const Services = () => {
   return (
-    <section className="flex-col flexCenter overflow-hidden bg-gray-20  py-10 font-sans">
+    <section className="flex-col flexCenter overflow-hidden   py-10 font-sans">
       <div className="max-container padding-container relative w-full flex justify-center">
 
         <div className="z-20 flex w-full flex-col lg:w-[95%]">
           <div className='relative'>
            
-            <h2 className="bold-40 lg:bold-60 mt-5 text-green-10">Our <span className='text-orange-50'>Services</span></h2>
+            <h2 className="bold-40 lg:bold-60 mt-5 text-gray-50">Our <span className='text-green-50'>Services</span></h2>
           </div>
           <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:mt-20 lg:gap-20">
             {FEATURES.map((feature) => (
@@ -36,13 +36,13 @@ type FeatureItem = {
 const FeatureItem = ({ title, icon, description }: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
-      <div className="rounded-full p-4 lg:p-7 bg-green-10">
-        <Image src={icon} alt="map" width={28} height={28} />
+      <div className="rounded-full p-2 lg:p-7 bg-green-90">
+        <Image src={icon} alt={icon} width={30} height={30} />
       </div>
-      <h2 className="bold-20 lg:bold-32 mt-5 capitalize text-orange-50">
+      <h2 className="bold-20 lg:bold-32 mt-5 capitalize text-green-50">
         {title}
       </h2>
-      <p className="regular-16 mt-5 text-green-90 lg:mt-[30px] lg:bg-none">
+      <p className="regular-18 mt-5 text-gray-50 lg:mt-[30px] text-left">
         {description}
       </p>
     </li>

@@ -16,11 +16,16 @@ module.exports = {
         gray: {
           
           20: '#f7f7f7',
-          30: '#D1FFEB'
+          30: '#D1FFEB',
+          50: '#E8FFF5'
          
+        },
+        blue: {
+          70: '#021639',
         },
         orange: {
           50: '#f59220',
+          20: '#FF2A03'
         },
        bgColor: {
         50: '#00FF94'

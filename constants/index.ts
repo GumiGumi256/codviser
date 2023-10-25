@@ -13,42 +13,42 @@ export const NAV_LINKS = [
   export const FEATURES = [
     {
       title: 'Web development',
-      icon: '/map.svg',
+      icon: '/web.svg',
       variant: 'green',
       description:
         'We create professional websites that are designed to convert and grow your business',
     },
     {
       title: 'app development',
-      icon: '/calendar.svg',
+      icon: '/web.svg',
       variant: 'green',
       description:
         "We develop custom mobile and web apps that meet your unique needs and help you achieve your business goals",
     },
     {
       title: 'E-commerce',
-      icon: '/tech.svg',
+      icon: '/cart.svg',
       variant: 'green',
       description:
         'We help you build a successful online store that allows you to sell your products and services to customers all over the world',
     },
     {
       title: 'Web hosting',
-      icon: '/location.svg',
+      icon: '/hosting.svg',
       variant: 'orange',
       description:
         'Reliable, secure, and scalable web hosting for businesses that want to craft websites that convert and grow',
     },
     {
       title: 'Digital Marketing',
-      icon: '/location.svg',
+      icon: '/boost.svg',
       variant: 'orange',
       description:
         'We develop and implement comprehensive digital marketing strategies that help you grow your business online',
     },
     {
       title: 'SEO',
-      icon: '/location.svg',
+      icon: '/boost.svg',
       variant: 'orange',
       description:
         'We help you optimize your website for search engines so you can reach more potential customers and grow your business',
