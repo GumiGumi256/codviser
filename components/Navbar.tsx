@@ -29,7 +29,7 @@ const Navbar = () => {
           alt="close"
           width={50}
           height={50}
-          className="inline-block cursor-pointer lg:hidden"
+          className="inline-block cursor-pointer lg:hidden relative -top-10 mr-4"
           onClick={toggleMenu}
         />
       ) : (
@@ -46,7 +46,7 @@ const Navbar = () => {
       {/* Conditional rendering based on the `isMenuOpen` state  */}
 
       {isMenuOpen ? (
-        <div className="bg-green-10 text-gray-50 w-[40vw] h-[100vh] shadow-sm absolute top-0 right-0 transition ease-in-out delay-150 duration-300">
+        <div className="ml-2 bg-green-10 text-gray-50 w-[50vw] h-[100vh] shadow-sm absolute top-0 right-0 transition ease-in-out delay-150 duration-300">
           <ul className="h-full gap-5 flex flex-col p-5">
           {NAV_LINKS.map((link) => (
             <Link
@@ -74,7 +74,7 @@ const Navbar = () => {
      {/* Render the "Get in Touch" button  */}
 
       {isMenuOpen && (
-        <div className="relative top-[80vh]">
+        <div className="relative top-[80vh] left-[12px] md:left-[-100px]">
           <Button
             type="button"
             title="Get in Touch"
