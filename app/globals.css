@@ -147,8 +147,8 @@ body {
   }
 
   /* Get App */
-  .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden    px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+  .about-us {
+    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
   }
 }
 

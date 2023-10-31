@@ -1,23 +1,25 @@
 import Image from "next/image";
 
 type ButtonProps = {
-  type: 'button' | 'submit';
+  type: "button" | "submit";
   title: string;
   icon?: string;
   variant: string;
   full?: boolean;
-}
+};
 
 const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
   return (
     <button
-    className={`flexCenter gap-3 rounded-full ${variant} ${full && 'w-full'}`}
+      className={`flexCenter gap-3 rounded-full ${variant} ${full && "w-full"}`}
       type={type}
     >
       {icon && <Image src={icon} alt={title} width={24} height={24} />}
-      <label className="bold-20 whitespace-nowrap cursor-pointer capitalize">{title}</label>
+      <span className="bold-20 whitespace-nowrap cursor-pointer capitalize">
+        {title}
+      </span>
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

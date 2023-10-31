@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <section className="flexCenter w-full flex-col pb-[10px]">
-      <div className="get-app">
+    <section id="about-us" className="flexCenter w-full flex-col pb-[10px]">
+      <div className="about-us">
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
           <h2 className="bold-40 lg:bold-60 xl:max-w-[320px] capitalize">
             <span className="text-green-50">about</span> us
@@ -20,17 +21,19 @@ const AboutUs = () => {
             development, UX/UI design, SEO and Digital marketing
           </p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
+            <Link href='/contact-us'>
             <Button
               type="button"
-              title="Learn More"
+              title="Contact Us"
               icon="/play.svg"
               variant="btn_white"
             />
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-1 items-center justify-end">
-          <Image src="/tech.svg" alt="man and woman with a laptop" width={550} height={570} />
+          <Image src="/man-1.png" alt="man and woman with a laptop" width={480} height={470} />
         </div>
       </div>
     </section>

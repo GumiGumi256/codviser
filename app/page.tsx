@@ -21,7 +21,7 @@ export default async function Home() {
 }
 
 const getProjects = async () => {
-  const query = '*[_type == "projects"]';
+  const query = '*[_type == "projects"][0...4]';
   const projects = await client.fetch(query);
   return projects;
 };

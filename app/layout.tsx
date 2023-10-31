@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='bg-bg-img-1'>
+      <ToastContainer />
         <Navbar />
       {children}
       <Footer />

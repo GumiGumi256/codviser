@@ -60,17 +60,3 @@ const Projects = ({ projects }: { projects: Project[] }) => {
 
 export default Projects;
 
-// const ProjectCard = ({ project }: { project: Project }) => {
-//   return (
-//     <li className="flex w-full flex-1 flex-col items-start">
-//         <Image
-//           src={urlForImage(project.image).url()}
-//           alt="Project"
-//           width={480}
-//           height={480}
-//           className="rounded-[15px] object-cover"
-//         />
-//       <h2 className="bold-20 lg:bold-32 mt-2 capitalize text-gray-20">{project.name}</h2>
-//     </li>
-//   );
-// };
