@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
+
+  
   return (
     <footer className="flexCenter mb-24 font-sans">
       <div className="padding-container max-container flex w-full flex-col gap-14">
@@ -17,9 +19,9 @@ const Footer = () => {
               <FooterColumn title={columns.title}>
                 <ul className="regular-20 flex flex-col gap-4 text-gray-50">
                   {columns.links.map((link) => (
-                    <Link href="/" key={link} className='transition-all hover:font-bold'>
+                    <div key={link} className=' hover:text-green-50'>
                       {link}
-                    </Link>
+                    </div>
                   ))}
                 </ul>
               </FooterColumn>
@@ -28,18 +30,18 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.links.map((link) => (
-                  <Link
-                    href="/"
+                  <div
+                    
                     key={link.label}
                     className="flex gap-4 md:flex-col lg:flex-row"
                   >
-                    <p className="whitespace-nowrap text-gray-50 transition-all hover:font-bold">
+                    <p className="whitespace-nowrap text-gray-50 hover:text-green-50">
                       {link.label}:
                     </p>
-                    <p className="regular-20 whitespace-nowrap text-gray-50">
+                    <p className="regular-20 whitespace-nowrap text-gray-50 hover:text-green-50">
                       {link.value}
                     </p>
-                  </Link>
+                  </div>
                 ))}
               </FooterColumn>
             </div>

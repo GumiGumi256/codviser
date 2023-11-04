@@ -20,6 +20,7 @@ const AboutUs = () => {
             E-commerce development, Content management systems, Custom software
             development, UX/UI design, SEO and Digital marketing
           </p>
+          <span></span>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
             <Link href='/contact-us'>
             <Button

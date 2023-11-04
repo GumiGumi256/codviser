@@ -3,6 +3,12 @@ import Button from "./Button"
 
 
 const HireUs = () => {
+
+  const handleCallClick = () => {
+    window.location.href = 'tel:+256770317980';
+  };
+  
+
   return (
     <div>
          <div className='bg-green-10 rounded-md mx-auto my-20 max-w-[1200px] text-gray-50 py-3 flexEnd font-sans'>
@@ -28,7 +34,7 @@ className='mb-1 mx-auto'
          type="button"
          title="Hire the best Developers"
          variant="btn_white"
-         
+         onClick= {handleCallClick}
         />
         <Image 
 src='/cta-btn-shape-1.svg'

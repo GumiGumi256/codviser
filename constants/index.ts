@@ -115,6 +115,12 @@ export const HOSTING_FEATURES = [
     {
       title: 'Learn More',
       links: [
+        // { href: '#about-us', key: 'pabout-us', link: 'About us' },
+        // { href: '#services', key: 'services', link: 'Portfolio' },
+        // { href: '/contact-us', key: 'contact-us', link: 'Contact Us' },
+        // { href: '/portfolio', key: 'portfolio', link: 'Portfolio' },
+        // { href: '/privacy-policy', key: 'privacy-policy', link: 'Privacy Policy' },
+        
         'About Us',
         'Services',
         'Portfolio',
@@ -131,7 +137,7 @@ export const HOSTING_FEATURES = [
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Admin Office', value: '+256774134780' },
+      { label: 'Admin Office', value: '+256770317980' },
       { label: 'Email', value: 'codviser@gmail.com' },
     ],
   };

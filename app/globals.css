@@ -19,6 +19,10 @@ body {
   .btn_white { 
     @apply  border-white bg-white px-8 py-3 text-green-10
   }
+
+  .btn_white_hover { 
+    @apply  border-white bg-white px-8 py-3 text-green-10 hover:bg-green-50 hover:text-white
+  }
   .btn_white_text  { 
     @apply  bg-white px-8 py-3 text-gray-50
   }
