@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Button from './Button'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -39,24 +40,16 @@ around the world at a reasonable cost
           </div>
         </div>
        
-        <Button
+  <Link href='/contact-us'>
+  <Button
   type="button"
   title="Get started"
   variant="btn_white"
   icon="/play.svg"
-  onClick={() => {
-    // Get the phone number to call
-    const phoneNumber = "+256770317980";
 
-    try {
-      // Attempt to initiate the phone call
-      window.location.href = "tel:" + phoneNumber;
-    } catch (error) {
-      // Handle any errors, e.g., unsupported feature
-      console.error("Error initiating phone call:", error);
-    }
-  }}
 />
+  </Link>
+
        
     </div>
    

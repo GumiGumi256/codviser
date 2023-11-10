@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Button from "./Button"
+import Link from "next/link";
 
 
 const HireUs = () => {
@@ -30,12 +31,14 @@ height={40}
 alt='cta shape'
 className='mb-1 mx-auto'
 />
+      <Link href='/contact-us'>
       <Button
          type="button"
          title="Hire the best Developers"
          variant="btn_white"
-         onClick= {() =>window.location.href = 'tel:+256770317980'}
+         
         />
+      </Link>
         <Image 
 src='/cta-btn-shape-1.svg'
 width={100}
