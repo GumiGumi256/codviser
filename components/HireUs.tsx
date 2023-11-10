@@ -34,7 +34,7 @@ className='mb-1 mx-auto'
          type="button"
          title="Hire the best Developers"
          variant="btn_white"
-         onClick= {handleCallClick}
+         onClick= {() =>window.location.href = 'tel:+256770317980'}
         />
         <Image 
 src='/cta-btn-shape-1.svg'

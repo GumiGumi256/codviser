@@ -53,6 +53,7 @@ const Navbar = () => {
               href={link.href}
               key={link.key}
               className="regular-24 lg:text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[2px] hover:border-green-50"
+              onClick={() => setIsMenuOpen(false)}
             >
               {link.label}
             </Link>
@@ -65,6 +66,7 @@ const Navbar = () => {
           href={link.href}
           key={link.key}
           className="regular-24 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[3px] hover:border-green-50"
+         
         >
           {link.label}
         </Link>
@@ -75,11 +77,13 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className="relative top-[80vh] left-[12px] md:left-[-100px]">
+           <Link href="/contact-us" onClick={() => setIsMenuOpen(false)}>
           <Button
             type="button"
             title="Get in Touch"
             variant="btn_white"
           />
+          </Link>
         </div>
       )}
 
