@@ -1,6 +1,9 @@
 import { client } from "@/sanity/lib/client";
 import Projects from "@/components/Projects";
 
+export const revalidate = 3600 // revalidate the data at most every hour
+ 
+
 export default async function Portfolio() {
 
   const projects = await getProjects();

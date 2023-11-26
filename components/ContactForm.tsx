@@ -26,6 +26,12 @@ const ContactForm = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const validateEmail = (email: string): boolean => {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  };
+  
+
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   setLoading(true);
@@ -60,7 +66,13 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         autoClose: 2000,
       });
 
-  
+   if (!validateEmail(formValues.email)) {
+    toast.error('Invalid email. Please check and try again!', {
+      position: 'top-right',
+      autoClose: 2000,
+    });
+    return;
+  }
       
       
     }
@@ -148,6 +160,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           onChange={handleChange}
           required
           rows={5}
+          maxLength={100} 
           className="w-full bg-gray-800 px-3 py-2 leading-tight text-gray-50  rounded shadow appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300"
         />
       </div>

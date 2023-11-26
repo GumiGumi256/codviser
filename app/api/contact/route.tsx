@@ -22,7 +22,8 @@ export async function POST(
         to: "codviser@gmail.com", // Update the email address here
         subject: "Form Submission Confirmation",
         html: `
- <p> ${name} ,</p>
+ <p> ${name} </p>
+ <p> Email: ${email}</p>
  <p>Phone Number: ${phone}</p>
  <p>Subject: ${message} </p>
  <p>Reach out to ${name}!</p>
