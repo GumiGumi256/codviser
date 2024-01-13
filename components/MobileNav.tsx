@@ -44,7 +44,7 @@ const MobileNav = () => {
             </Link>
           ))}
         </ul>
-        <div className="relative top-[80vh] left-[12px] md:left-[-100px]">
+        <div className="flex justify-center items-center">
            <Link href="/contact-us">
           <Button
             type="button"
