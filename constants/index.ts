@@ -115,22 +115,29 @@ export const HOSTING_FEATURES = [
     {
       title: 'Learn More',
       links: [
-        // { href: '#about-us', key: 'pabout-us', link: 'About us' },
-        // { href: '#services', key: 'services', link: 'Portfolio' },
-        // { href: '/contact-us', key: 'contact-us', link: 'Contact Us' },
-        // { href: '/portfolio', key: 'portfolio', link: 'Portfolio' },
-        // { href: '/privacy-policy', key: 'privacy-policy', link: 'Privacy Policy' },
+        { href: '/#about-us', key: 'about-us', link: 'About us' },
+        { href: '/#services', key: 'services', link: 'services' },
+        { href: '/contact-us', key: 'contact-us', link: 'Contact Us' },
+        { href: '/portfolio', key: 'portfolio', link: 'Portfolio' },
+        { href: '/privacy-policy', key: 'privacy-policy', link: 'Privacy Policy' },
         
-        'About Us',
-        'Services',
-        'Portfolio',
-        'Privacy Policy',
-        'Contact Us',
+        // 'About Us',
+        // 'Services',
+        // 'Portfolio',
+        // 'Privacy Policy',
+        // 'Contact Us',
       ],
     },
     {
       title: 'Our Services',
-      links: ['web development', 'app development', 'UI/UX design', 'custom software', 'digital marketing'],
+      links: [
+        { href: '#services', key: 'web-development', link: 'Web Development' },
+        { href: '#services', key: 'app-development', link: 'App Development' },
+        { href: '#services', key: 'ui-ux-design', link: 'UI/UX Design' },
+        { href: '#services', key: 'custom-software', link: 'Custom Software' },
+        { href: '#services', key: 'digital-marketing', link: 'Digital Marketing' }
+    ]
+    
     },
   ];
   
