@@ -12,6 +12,7 @@ type ButtonProps = {
 const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
   return (
     <button
+    aria-label={title}
       className={`flexCenter gap-3 rounded-full ${variant} ${full && "w-full"}`}
       type={type}
     >

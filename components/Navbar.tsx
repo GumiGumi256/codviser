@@ -14,13 +14,15 @@ const Navbar = () => {
       <MobileNav />
       <ul className="h-full gap-12 lg:flex hidden">
         {NAV_LINKS.map((link) => (
-          <Link
+        <li className="regular-24 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[3px] hover:border-green-50">
+            <Link
             href={link.href}
             key={link.key}
-            className="regular-24 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[3px] hover:border-green-50"
+            
           >
             {link.label}
           </Link>
+        </li>
         ))}
       </ul>
 

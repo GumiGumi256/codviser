@@ -10,7 +10,7 @@ const Hero = () => {
     <section   className="padding-container max-container flex flex-col
     gap-20 py-10 pb-32 md:gap-28 md:py-20">
     <div className='flexCenter flex-col lg:max-w-[1050px] mx-auto'>
-    <h1 className="bold-40 md:bold-84 text-gray-50 text">We make great digital products
+    <h1 className="bold-40 md:bold-84 text-gray-50">We make great digital products
 for <span className='text-green-50'>innovative</span> brands.</h1>
         <p className="regular-24 mt-6 text-gray-50 xl:max-w-[520px]">
         Get your desired design services from our talented designers,
