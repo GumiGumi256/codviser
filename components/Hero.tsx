@@ -1,5 +1,3 @@
-
-
 import Image from 'next/image'
 import React from 'react'
 import Button from './Button'
@@ -7,20 +5,20 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section   className="padding-container max-container flex flex-col
-    gap-20 py-10 pb-32 md:gap-28 md:py-20">
-    <div className='flexCenter flex-col lg:max-w-[1050px] mx-auto'>
-    <h1 className="bold-40 md:bold-84 text-gray-50">We make great digital products
-for <span className='text-green-50'>innovative</span> brands.</h1>
-        <p className="regular-24 mt-6 text-gray-50 xl:max-w-[520px]">
-        Get your desired design services from our talented designers,
-around the world at a reasonable cost
+    <section className="padding-container max-container flex flex-col gap-20 py-10 pb-32 md:gap-28 md:py-20">
+      <div className='flexCenter flex-col lg:max-w-[1050px] mx-auto'>
+      <h1 className="bold-40 md:bold-84 text-gray-50">
+  Transform Your Brand with Cutting-Edge <span className='text-green-50'>Digital Solutions</span>
+</h1>
+
+        <p className="regular-24 mt-6 text-gray-50 w-full">
+          Ready to take your brand to new heights? Join forces with our world-class designers today and start your journey toward success. Worried about costs? Our competitive pricing ensures top-notch design services without breaking the bank. Join our network of over 30 satisfied brands worldwide
         </p>
+
         <div className="my-5 flex flex-wrap gap-5">
           <div className="flex items-center gap-2">
-          <p className="bold-16 lg:bold-20 text-gray-50">
-              5.0 rating 
-             
+            <p className="bold-16 lg:bold-20 text-gray-50">
+              5.0 rating
             </p>
             {Array(5)
               .fill(1)
@@ -34,25 +32,21 @@ around the world at a reasonable cost
                 />
               ))}
             <p className="bold-16 lg:bold-20 text-gray-30" >
-               25+
-              <span className="regular-18 lg:regular-20 ml-2">Happy Clients</span>
+              30+
+              <span className="regular-18 lg:regular-20 ml-2">Happy Customers</span>
             </p>
           </div>
         </div>
-       
-  <Link href='/contact-us'>
-  <Button
-  type="button"
-  title="Get started"
-  variant="btn_white"
-  icon="/play.svg"
 
-/>
-  </Link>
-
-       
-    </div>
-   
+        <Link href='/contact-us'>
+          <Button
+            type="button"
+            title="Get started now"
+            variant="btn_white"
+            icon="/play.svg"
+          />
+        </Link>
+      </div>
     </section>
   )
 }
