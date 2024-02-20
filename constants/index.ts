@@ -65,7 +65,7 @@ export const HOSTING_FEATURES = [
       '5GB Storage',
       '10GB Bandwidth',
       'Free Domain Name',
-      'Free Email',
+      // 'Free Email',
       '24/7 Support',
       'Individual configuration'
     ]
@@ -78,7 +78,7 @@ export const HOSTING_FEATURES = [
       '20GB Storage',
       'Unlimited Bandwidth',
       'Free Domain Name',
-      'Free Email',
+      // 'Free Email',
       'Free Maintainance',
       '24/7 Support',
       'Individual configuration',
@@ -121,11 +121,6 @@ export const HOSTING_FEATURES = [
         { href: '/portfolio', key: 'portfolio', link: 'Portfolio' },
         { href: '/privacy-policy', key: 'privacy-policy', link: 'Privacy Policy' },
         
-        // 'About Us',
-        // 'Services',
-        // 'Portfolio',
-        // 'Privacy Policy',
-        // 'Contact Us',
       ],
     },
     {
@@ -156,6 +151,5 @@ export const HOSTING_FEATURES = [
       '/instagram.svg',
       '/twitter.svg',
       '/youtube.svg',
-      // '/wordpress.svg',
     ],
   };

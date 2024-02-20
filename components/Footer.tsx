@@ -19,11 +19,13 @@ const Footer = () => {
               <FooterColumn title={columns.title} key={columns.title}>
                 <ul className="regular-20 flex flex-col gap-4 text-gray-50">
                   {columns.links.map((link) => (
-                   <Link href={link.href}>
+                  <li>
+                     <Link href={link.href}>
                     <div key={link.key} className=' hover:text-green-50'>
                       {link.link}
                     </div>
                    </Link>
+                  </li>
                   ))}
                 </ul>
               </FooterColumn>
@@ -52,9 +54,11 @@ const Footer = () => {
               <FooterColumn title={SOCIALS.title}>
                 <ul className="regular-24 flex gap-4 text-gray-50">
                   {SOCIALS.links.map((link) => (
-                    <Link href="/" key={link}>
+                    <li>
+                      <Link href="/" key={link}>
                       <Image src={link} alt=" social media logo" width={24} height={24} className='text-green-50' />
                     </Link>
+                    </li>
                   ))}
                 </ul>
               </FooterColumn>
