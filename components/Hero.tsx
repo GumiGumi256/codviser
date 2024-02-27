@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="padding-container max-container  ">
+    <section className="padding-container max-container w-full mt-10 ">
       <div className='flexCenter flex-col'>
       <h1 className="bold-40 md:bold-84 text-gray-50 text-balance">
   Transform Your Brand with Cutting-Edge <span className='text-green-50'>Digital Solutions</span>

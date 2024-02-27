@@ -42,9 +42,9 @@ const config = {
         50: '#00FF94'
        }
       },
-      fontFamily: {
-        sans: ['inter', 'sans-serif'],
-      },
+      // fontFamily: {
+      //   sans: ['inter', 'sans-serif'],
+      // },
       backgroundImage: {
         'bg-img-1': "linear-gradient(90deg, rgba(10,22,32,1) 0%, rgba(5,11,14,1) 40%);",
         'bg-img-2': "url('/img-2.png')",

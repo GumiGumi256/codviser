@@ -37,12 +37,12 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
   return (
     <div className="flex w-full flex-1 flex-col items-start">
       <div className="rounded-full p-2 lg:p-7 bg-green-90">
-        <Image src={icon} alt={icon} width={30} height={30} priority={true}/>
+        <Image src={icon} alt={icon} width={30} height={30} priority={true} className='object-cover'/>
       </div>
       <h2 className="bold-20 lg:bold-32 mt-5 capitalize text-green-50">
         {title}
       </h2>
-      <p className="regular-18 mt-5 text-gray-50 lg:mt-[30px] text-left">
+      <p className="regular-18 mt-3 md:mt-7 text-gray-50  text-left">
         {description}
       </p>
     </div>

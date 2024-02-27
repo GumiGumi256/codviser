@@ -34,12 +34,9 @@ const MobileNav = () => {
     <div className="">
           <ul className="h-full gap-5 flex flex-col p-5">
           {NAV_LINKS.map((link) => (
-           <li  className="regular-24 lg:text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[2px] hover:border-green-50">
+           <li  key={link.key} className="regular-24 lg:text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[2px] hover:border-green-50">
              <Link
               href={link.href}
-              key={link.key}
-             
-            
             >
               {link.label}
             </Link>

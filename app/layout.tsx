@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Darker_Grotesque } from "next/font/google";
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
   description: 'Turn your idea into the next big thing with us',
 }
 
+const darkerGrotesque = Darker_Grotesque({subsets:["latin"], weight: ['400','500','600','700','800','900']})
+
 export default function RootLayout({
   children,
 }: {
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-bg-img-1'>
+      <body className={`bg-bg-img-1 ${darkerGrotesque.className}`}>
       <ToastContainer />
         <Navbar />
       {children}
