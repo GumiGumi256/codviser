@@ -5,13 +5,13 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="padding-container max-container flex flex-col gap-20 py-10 pb-32 md:gap-28 md:py-20">
-      <div className='flexCenter flex-col lg:max-w-[1050px] mx-auto'>
-      <h1 className="bold-40 md:bold-84 text-gray-50">
+    <section className="padding-container max-container  ">
+      <div className='flexCenter flex-col'>
+      <h1 className="bold-40 md:bold-84 text-gray-50 text-balance">
   Transform Your Brand with Cutting-Edge <span className='text-green-50'>Digital Solutions</span>
 </h1>
 
-        <p className="regular-24 mt-6 text-gray-50 w-full">
+        <p className="regular-24 mt-6 text-gray-50 w-full text-balance">
           Ready to take your brand to new heights? Join forces with our world-class designers today and start your journey toward success. Worried about costs? Our competitive pricing ensures top-notch design services without breaking the bank. Join our network of over 30 satisfied brands worldwide
         </p>
 

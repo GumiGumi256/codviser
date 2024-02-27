@@ -15,15 +15,15 @@ interface Project {
 
 const Projects = ({ projects }: { projects: Project[] }) => {
   return (
-    <section className="flex-col flexCenter overflow-hidden  font-sans">
-      <div className="max-container padding-container relative w-full flex justify-center">
-        <div className="z-20 flex w-full flex-col lg:w-[95%]">
-          <div className="relative">
-            <h2 className="bold-40 lg:bold-60 mt-8 text-gray-50">
+    <section className="max-container padding-container font-sans">
+       <h2 className="bold-40 lg:bold-60 mt-8 text-gray-50 text-center my-5 md:my-10">
               Our <span className="text-green-50">Projects</span>
             </h2>
-          </div>
-          <ul className="mt-10 grid gap-10 md:grid-cols-2  lg:mt-20 lg:gap-20">
+     
+          
+           
+         
+          <ul className=" grid gap-10 md:grid-cols-2 lg:gap-20">
             {projects.map((project) => (
               <li
                 className="flex w-full flex-1 flex-col items-start"
@@ -34,7 +34,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   alt="Project image"
                   width={500}
                   height={510}
-                  className="rounded-[15px] object-cover"
+                  className="rounded-lg object-cover"
                 />
                 <h2 className="bold-20 lg:bold-32 mt-2 capitalize text-green-50">
                   {project.name}
@@ -52,8 +52,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               </li>
             ))}
           </ul>
-        </div>
-      </div>
+       
     </section>
   );
 };

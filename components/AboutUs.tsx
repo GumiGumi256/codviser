@@ -5,12 +5,11 @@ import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <section id="about-us" className="flexCenter w-full flex-col pb-[10px]">
-      <div className="about-us">
-        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
-          <h2 className="bold-40 lg:bold-60 xl:max-w-[320px] capitalize">
-            <span className="text-green-50">about</span> us
-          </h2>
+    <section id="about-us" className="w-full max-container padding-container">
+       <h2 className="bold-40 lg:bold-60 mt-2 text-gray-50 text-center my-5 md:my-10"> <span className='text-green-50'>About</span> Us</h2>
+      <div className="flex flex-col md:flex-row">
+        <div className=" flex w-full flex-1 flex-col items-center justify-center gap-12">
+       
           <p className="regular-24 text-gray-50 text-left">
             At Codviser, we provide innovative and effective web and app
             development services to businesses of all sizes. Our team of

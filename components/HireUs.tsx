@@ -5,15 +5,13 @@ import Link from "next/link";
 
 const HireUs = () => {
 
-  const handleCallClick = () => {
-    window.location.href = 'tel:+256770317980';
-  };
+ 
   
 
   return (
-    <div>
-         <div className='bg-green-10 rounded-md mx-auto my-20 max-w-[1200px] text-gray-50 py-3 flexEnd font-sans'>
-      <div className=' flex flex-col lg:flex-row flexCenter gap-10 mx-5 lg:mx-10'>
+    <section className="max-container padding-container">
+         <div className='bg-green-10 rounded-md mx-auto my-20 w-full text-gray-50 py-3 flexEnd font-sans'>
+      <div className=' flex-col lg:flex-row flexCenter gap-10 mx-5 lg:mx-10'>
         <h2 className="bold-25 lg:bold-30">Hire the world’s best developers
 and designers around!</h2>
 <Image 
@@ -49,7 +47,7 @@ className='mt-1 mx-auto rotate-180'
 </div>
       </div>
       </div>
-    </div>
+    </section>
   )
 }
 

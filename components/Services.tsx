@@ -3,15 +3,15 @@ import Image from 'next/image'
 
 const Services = () => {
   return (
-    <section id='services' className="flex-col flexCenter overflow-hidden   py-5 font-sans">
-      <div className="max-container padding-container relative w-full flex justify-center">
+    <section id='services' className=" overflow-hidden   py-5 font-sans max-container padding-container">
+      <div className=" relative w-full flex justify-center">
 
         <div className="z-20 flex w-full flex-col lg:w-[95%]">
-          <div className='relative'>
+       
            
-            <h2 className="bold-40 lg:bold-60 mt-2 text-gray-50">Our <span className='text-green-50'>Services</span></h2>
-          </div>
-          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:mt-20 lg:gap-20">
+            <h2 className="bold-40 lg:bold-60 mt-2 text-gray-50 text-center my-5 md:my-10">Our <span className='text-green-50'>Services</span></h2>
+        
+          <div className=" grid gap-10 md:grid-cols-2 lg:grid-cols-3  lg:gap-20">
             {FEATURES.map((feature) => (
               <FeatureItem 
                 key={feature.title}
@@ -20,7 +20,7 @@ const Services = () => {
                 description={feature.description}
               />
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </section>
