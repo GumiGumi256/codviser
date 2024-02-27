@@ -15,7 +15,7 @@ import Button from "./Button"
 const MobileNav = () => {
   return (
     <Sheet>
-  <SheetTrigger> <Image
+  <SheetTrigger aria-label="menu button"> <Image
           src="menu.svg"
           alt="menu"
           width={32}

@@ -35,9 +35,9 @@ type FeatureItem = {
 
 const FeatureItem = ({ title, icon, description }: FeatureItem) => {
   return (
-    <li className="flex w-full flex-1 flex-col items-start">
+    <div className="flex w-full flex-1 flex-col items-start">
       <div className="rounded-full p-2 lg:p-7 bg-green-90">
-        <Image src={icon} alt={icon} width={30} height={30} />
+        <Image src={icon} alt={icon} width={30} height={30} priority={true}/>
       </div>
       <h2 className="bold-20 lg:bold-32 mt-5 capitalize text-green-50">
         {title}
@@ -45,7 +45,7 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
       <p className="regular-18 mt-5 text-gray-50 lg:mt-[30px] text-left">
         {description}
       </p>
-    </li>
+    </div>
   )
 }
 
