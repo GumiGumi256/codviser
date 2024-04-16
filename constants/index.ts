@@ -140,7 +140,8 @@ export const HOSTING_FEATURES = [
     title: 'Contact Us',
     links: [
       { label: 'Admin Office', value: '+256770317980' },
-      { label: 'Email', value: 'codviser@gmail.com' },
+      { label: 'Sales', value: 'sales@coviser.com' },
+      { label: 'Learn More', value: 'info@coviser.com' },
     ],
   };
   

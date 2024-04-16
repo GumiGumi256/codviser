@@ -1,5 +1,6 @@
 import {
     Sheet,
+    SheetClose,
     SheetContent,
     SheetDescription,
     SheetHeader,
@@ -34,22 +35,29 @@ const MobileNav = () => {
     <div className="">
           <ul className="h-full gap-5 flex flex-col p-5">
           {NAV_LINKS.map((link) => (
-           <li  key={link.key} className="regular-24 lg:text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[2px] hover:border-green-50">
+         
+
+          <li  key={link.key} className="regular-24 lg:text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-50 hover:border-b-[2px] hover:border-green-50">
              <Link
               href={link.href}
             >
+            <SheetClose >
               {link.label}
+          </SheetClose>
             </Link>
            </li>
           ))}
         </ul>
         <div className="flex justify-center items-center">
+
            <Link href="/contact-us">
+          <SheetClose>
           <Button
             type="button"
             title="Get in Touch"
             variant="btn_white"
           />
+          </SheetClose>
           </Link>
         </div>
         </div>

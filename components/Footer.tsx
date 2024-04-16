@@ -37,7 +37,7 @@ const Footer = () => {
                   <div
                     
                     key={link.label}
-                    className="flex gap-4 md:flex-col lg:flex-row"
+                    className="flex gap-4 md:flex-col lg:flex-row items-center"
                   >
                     <p className="whitespace-nowrap text-gray-50 hover:text-green-50">
                       {link.label}:
