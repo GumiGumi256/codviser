@@ -10,7 +10,7 @@ export default async function Portfolio() {
 
   return (
     <div className="max-container  my-20">
-      <Projects projects={projects} />
+      <Projects projects={projects} title='our Portfolio' />
     </div>
   );
 }

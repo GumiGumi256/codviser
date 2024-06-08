@@ -1,54 +1,38 @@
-import Image from "next/image"
-import Button from "./Button"
-import Link from "next/link";
+"use client";
+import { useScroll, useTransform } from "framer-motion";
+import React from "react";
+import { GoogleGeminiEffect } from "./ui/gemini-effect";
 
+export function HireUs() {
+  const ref = React.useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
 
-const HireUs = () => {
-
- 
-  
+  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
 
   return (
-    <section className="max-container padding-container">
-         <div className='bg-green-10 rounded-md mx-auto my-20 w-full text-gray-50 py-3 flexEnd font-sans'>
-      <div className=' flex-col lg:flex-row flexCenter gap-10 mx-5 lg:mx-10'>
-        <h2 className="bold-25 lg:bold-30">Hire the world’s best developers
-and designers around!</h2>
-<Image 
-src='/cta-shape-1.svg'
-width={300}
-height={200}
-alt='arrow image'
-className='hidden lg:block'
-/>
-<div className='relative'>
-<Image 
-src='/cta-btn-shape-1.svg'
-width={100}
-height={40}
-alt='cta shape'
-className='mb-1 mx-auto'
-/>
-      <Link href='/contact-us'>
-      <Button
-         type="button"
-         title="Hire the best Developers"
-         variant="btn_white"
-         
-        />
-      </Link>
-        <Image 
-src='/cta-btn-shape-1.svg'
-width={100}
-height={40}
-alt='cta shape'
-className='mt-1 mx-auto rotate-180'
-/>
-</div>
-      </div>
-      </div>
-    </section>
-  )
+    <div
+      className="h-[400vh]  w-full dark:border border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+      ref={ref}
+    >
+      <GoogleGeminiEffect
+      className="mb-20 md:mb-10"
+      title="Unlock World-Class Talent"
+      description="Pioneering Excellence in Africa’s Tech Landscape"
+        pathLengths={[
+          pathLengthFirst,
+          pathLengthSecond,
+          pathLengthThird,
+          pathLengthFourth,
+          pathLengthFifth,
+        ]}
+      />
+    </div>
+  );
 }
-
-export default HireUs

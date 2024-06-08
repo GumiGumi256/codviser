@@ -2,17 +2,21 @@ import Image from 'next/image'
 import React from 'react'
 import Button from './Button'
 import Link from 'next/link'
+import { BackgroundBeams } from './ui/background-beams'
+import { HoverBorderGradient } from './ui/hover-border-gradient'
+import { FlipWords } from './ui/flip-text'
+import { ArrowRightCircleIcon } from '@heroicons/react/20/solid'
 
 const Hero = () => {
   return (
-    <section className="padding-container max-container w-full mt-10 ">
+    <section className="padding-container max-container w-full mt-0 md:mt-10">
       <div className='flexCenter flex-col'>
       <h1 className="bold-40 md:bold-84 text-gray-50 text-balance">
-  Transform Your Brand with Cutting-Edge <span className='text-green-50'>Digital Solutions</span>
+  Transform Your Brand with Cutting-Edge <FlipWords className='text-green-50' words={['Integrations', 'Automations', 'Creations', 'Innovations', 'Solutions']} />
 </h1>
 
         <p className="regular-24 mt-6 text-gray-50 w-full text-balance">
-          Ready to take your brand to new heights? Join forces with our world-class designers today and start your journey toward success. Worried about costs? Our competitive pricing ensures top-notch design services without breaking the bank. Join our network of over 30 satisfied brands worldwide
+        Ready to elevate your brand? Partner with our top designers today and embark on your success journey. Concerned about costs? Our competitive pricing offers premium design services affordably. Join over 30 satisfied brands worldwide
         </p>
 
         <div className="my-5 flex flex-wrap gap-5">
@@ -39,14 +43,16 @@ const Hero = () => {
         </div>
 
         <Link href='/contact-us'>
-          <Button
-            type="button"
-            title="Get started now"
-            variant="btn_white"
-            icon="/play.svg"
-          />
+        <HoverBorderGradient
+        containerClassName="rounded-full"
+        as="button"
+        className=" bg-green-90 text-lg flex items-center gap-2 text-gray-50 px-8 py-3 font-bold"
+      >
+        Get Started <ArrowRightCircleIcon className="w-5" />
+      </HoverBorderGradient>
         </Link>
       </div>
+      <BackgroundBeams />
     </section>
   )
 }

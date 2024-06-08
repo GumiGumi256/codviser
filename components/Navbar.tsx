@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import MobileNav from "./MobileNav";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { ArrowRightCircleIcon } from "@heroicons/react/20/solid";
 
 const Navbar = () => {
   return (
@@ -28,11 +30,13 @@ const Navbar = () => {
 
       <div className="lg:flexCenter hidden">
         <Link href="/contact-us">
-          <Button
-            type="button"
-            title="Get in Touch"
-            variant="btn_white_hover"
-          />
+        <HoverBorderGradient
+        containerClassName="rounded-full"
+        as="button"
+        className=" bg-green-90 text-lg flex items-center gap-2 text-gray-50 px-8 py-3 font-bold"
+      >
+        Get In Touch <ArrowRightCircleIcon className="w-5" />
+      </HoverBorderGradient>
         </Link>
       </div>
     </nav>

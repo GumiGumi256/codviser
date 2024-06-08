@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: 'Turn your idea into the next big thing with us',
 }
 
+export const revalidate = 172800; 
+
 const darkerGrotesque = Darker_Grotesque({subsets:["latin"], weight: ['400','500','600','700','800','900']})
 
 export default function RootLayout({
