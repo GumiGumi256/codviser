@@ -17,7 +17,7 @@ export default async function Home() {
       <AboutUs />
       <Projects projects={projects} title="recent Projects" />
     
-      <HireUs />
+      {/* <HireUs /> */}
     </main>
   );
 }

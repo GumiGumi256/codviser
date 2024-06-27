@@ -28,5 +28,9 @@
   <priority>0.80</priority>
 </url>
 
-
+<url>
+  <loc>https://www.codviser.com/about-us</loc>
+  <lastmod>2024-06-11T08:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>

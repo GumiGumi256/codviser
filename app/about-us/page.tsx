@@ -9,12 +9,12 @@ export default function AboutUsPage() {
     <main className=" max-container w-full mt-0 md:mt-10">
       <div>
         <div className="flexCenter flex-col mx-5 md:mx-0">
-          <h1 className="bold-40 md:bold-84 text-gray-50 text-balance capitalize">
+          <h1 className="bold-40 md:bold-84 text-gray-50 text-balance capitalize text-left md:text-center">
             bridging the Digital Divide for{" "}
             <span className="text-green-50">African Businesses</span>
           </h1>
 
-          <p className="regular-24 mt-6 text-gray-50 w-full text-balance">
+          <p className="regular-24 mt-6 text-gray-50 w-full text-balance text-left md:text-center">
             Codviser is a dynamic and innovative software development company
             based in Uganda, dedicated to shaping the digital experiences of
             businesses and individuals across Africa. With a strong focus on

@@ -11,11 +11,11 @@ const Hero = () => {
   return (
     <section className="padding-container max-container w-full mt-0 md:mt-10">
       <div className='flexCenter flex-col'>
-      <h1 className="bold-40 md:bold-84 text-gray-50 text-balance">
+      <h1 className="bold-40 md:bold-84 text-gray-50 text-balance text-left md:text-center">
   Transform Your Brand with Cutting-Edge <FlipWords className='text-green-50' words={['Integrations', 'Automations', 'Creations', 'Innovations', 'Solutions']} />
 </h1>
 
-        <p className="regular-24 mt-6 text-gray-50 w-full text-balance">
+        <p className="regular-24 mt-6 text-gray-50 w-full text-balance text-left md:text-center">
         Ready to elevate your brand? Partner with our top designers today and embark on your success journey. Concerned about costs? Our competitive pricing offers premium design services affordably. Join over 30 satisfied brands worldwide
         </p>
 
