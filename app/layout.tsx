@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 openGraph: {
     title: 'Codviser - Expert Web and Mobile App Development',
   description: 'Codviser specializes in custom web and mobile app development, helping businesses transform their digital presence with innovative, secure, and scalable solutions. Partner with us to turn your ideas into reality.',
-openGraph: {
   },
 }
 
