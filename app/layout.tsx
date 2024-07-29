@@ -8,8 +8,12 @@ import { GoogleTagManager } from '@next/third-parties/google'
 
 
 export const metadata: Metadata = {
-  title: 'Codviser, Bringing ideas to life',
-  description: 'Turn your idea into the next big thing with us',
+  title: 'Codviser - Expert Web and Mobile App Development',
+  description: 'Codviser specializes in custom web and mobile app development, helping businesses transform their digital presence with innovative, secure, and scalable solutions. Partner with us to turn your ideas into reality.',
+openGraph: {
+    title: 'Codviser - Expert Web and Mobile App Development',
+  description: 'Codviser specializes in custom web and mobile app development, helping businesses transform their digital presence with innovative, secure, and scalable solutions. Partner with us to turn your ideas into reality.',
+  },
 }
 
 export const revalidate = 172800; 
