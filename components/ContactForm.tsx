@@ -5,7 +5,7 @@ import Button from './Button';
 import Image from 'next/image';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { sendGTMEvent } from '@next/third-parties/google'
 
 
 interface FormValues {
@@ -59,6 +59,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
        toast.success('Your message has been sent successfully!', {
         position: 'top-right',
         autoClose: 2000, });// Duration for the toast message (in milliseconds)
+        sendGTMEvent({ event: 'buttonClicked', value: 'form submitted' })
     } else {
       // Handle the error
       toast.error('Something went wrong. Please try again!', {

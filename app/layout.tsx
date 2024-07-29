@@ -4,7 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { ToastContainer } from 'react-toastify';
-
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <GoogleTagManager gtmId="G-WMCCRTV2N2" />
       <body className={`bg-bg-img-1 ${darkerGrotesque.className}`}>
       <ToastContainer />
         <Navbar />
