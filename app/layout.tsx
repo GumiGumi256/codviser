@@ -9,10 +9,10 @@ import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: 'Codviser - Expert Web and Mobile App Development',
-  description: 'Codviser specializes in custom web and mobile app development, helping businesses transform their digital presence with innovative, secure, and scalable solutions. Partner with us to turn your ideas into reality.',
+  description: 'Codviser is Uganda’s leading web and mobile app development company, delivering secure and scalable digital solutions. We help businesses across Africa transform their digital presence with custom websites and mobile apps. Partner with us to turn your ideas into reality and grow your business online.',
 openGraph: {
     title: 'Codviser - Expert Web and Mobile App Development',
-  description: 'Codviser specializes in custom web and mobile app development, helping businesses transform their digital presence with innovative, secure, and scalable solutions. Partner with us to turn your ideas into reality.',
+  description: 'Codviser is Uganda’s leading web and mobile app development company, delivering secure and scalable digital solutions. We help businesses across Africa transform their digital presence with custom websites and mobile apps. Partner with us to turn your ideas into reality and grow your business online.',
   },
 }
 
