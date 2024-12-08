@@ -5,16 +5,17 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { ToastContainer } from 'react-toastify';
 import { GoogleTagManager } from '@next/third-parties/google'
-
+import 'react-phone-number-input/style.css'
 
 export const metadata: Metadata = {
-  title: 'Codviser - Expert Web and Mobile App Development',
-  description: 'Codviser is Uganda’s leading web and mobile app development company, delivering secure and scalable digital solutions. We help businesses across Africa transform their digital presence with custom websites and mobile apps. Partner with us to turn your ideas into reality and grow your business online.',
-openGraph: {
-    title: 'Codviser - Expert Web and Mobile App Development',
-  description: 'Codviser is Uganda’s leading web and mobile app development company, delivering secure and scalable digital solutions. We help businesses across Africa transform their digital presence with custom websites and mobile apps. Partner with us to turn your ideas into reality and grow your business online.',
+  title: 'Codviser - Custom Web and Mobile App Development in Africa',
+  description: 'Codviser is Africa’s trusted partner for custom web and mobile app development. Based in Uganda, we deliver scalable, secure, and innovative digital solutions to transform your business. From e-commerce platforms to enterprise apps, Codviser helps businesses thrive online with tailored solutions.',
+  openGraph: {
+    title: 'Codviser - Custom Web and Mobile App Development in Africa',
+    description: 'Codviser is Africa’s trusted partner for custom web and mobile app development. Based in Uganda, we deliver scalable, secure, and innovative digital solutions to transform your business. From e-commerce platforms to enterprise apps, Codviser helps businesses thrive online with tailored solutions.',
   },
-}
+};
+
 
 export const revalidate = 172800; 
 

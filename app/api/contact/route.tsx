@@ -7,7 +7,7 @@ export async function POST(
 ) {
   if (req.method === "POST") {
     try {
-      const { email, name, phone, message } = await req.json(); // Create a Nodemailer transporter
+      const { email, name, phone, message, interest } = await req.json(); // Create a Nodemailer transporter
 
       const transporter = nodemailer.createTransport({
         service: "Gmail", // Use your email service provider here if different from Gmail
@@ -25,7 +25,8 @@ export async function POST(
  <p> ${name} </p>
  <p> Email: ${email}</p>
  <p>Phone Number: ${phone}</p>
- <p>Subject: ${message} </p>
+ <p>Message: ${message} </p>
+  <p>Reason: ${interest} </p>
  <p>Reach out to ${name}!</p>
  `,
       };

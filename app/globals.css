@@ -127,3 +127,18 @@
   }
 
 }
+
+
+/* =====  REACT PHONE NUMBER INPUT OVERRIDES */
+.PhoneInputInput {
+  outline: none;
+  margin-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+}
+.PhoneInputCountrySelect {
+  background-color: #003128;
+}
