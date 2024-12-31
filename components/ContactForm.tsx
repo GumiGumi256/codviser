@@ -111,9 +111,9 @@ const ContactForm = () => {
   return (
     <div>
       <div className="mx-auto max-w-screen-md text-center mb-6 lg:mb-10">
-        <h2 className="mb-4 tracking-tight bold-40 text-gray-50 lg:bold-52">
+        <h1 className="mb-4 tracking-tight bold-40 text-gray-50 lg:bold-52">
           Get in touch with us
-        </h2>
+        </h1>
         <p className=" font-light regular-24 text-gray-50 p-2">
           At Codviser, we're passionate about turning your ideas into digital
           realities. With a dedicated team of experts, we're committed to

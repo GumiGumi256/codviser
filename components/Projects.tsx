@@ -15,9 +15,9 @@ const Projects = ({ projects, title }: { projects: Project[], title:string }) =>
   
   return (
     <section className="max-container padding-container font-sans">
-       <h2 className="bold-40 lg:bold-60 mt-8 text-gray-50 text-center my-5 md:my-10">
+       <h1 className="bold-40 lg:bold-60 mt-8 text-gray-50 text-center my-5 md:my-10">
               {firstWord.length > 0 ? firstWord : 'Our'} <span className="text-green-50"> {title.split(' ')[1]}</span>
-            </h2>
+            </h1>
      
           
            
