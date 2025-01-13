@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-       <GoogleTagManager gtmId="G-WMCCRTV2N2" />
+       {/* <GoogleTagManager gtmId="G-WMCCRTV2N2" /> */}
       <body className={`bg-bg-img-1 ${darkerGrotesque.className}`}>
       <ToastContainer />
         <Navbar />
